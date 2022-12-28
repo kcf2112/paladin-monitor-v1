@@ -8,6 +8,9 @@ export class Paladin {
   customer = '';
   location = '';
   group = '';
+  hasDrive = false;
+  driveSize = 0;
+  driveSpaceAvail = 0;
 
   constructor(ipAddress) {
     this.ipAddress = ipAddress;
