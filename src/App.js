@@ -17,7 +17,8 @@ const App = () => {
     { field: 'ipAddress', filter: true },
     { field: 'customer', filter: true },
     { field: 'hostname', filter: true },
-    { field: 'location', filter: true }
+    { field: 'location', filter: true },
+    { field: 'hasDrive', filter: true },
   ]);
 
   // DefaultColDef sets props common to all Columns
@@ -50,7 +51,7 @@ const App = () => {
       <button onClick={buttonListener}>Show Selected</button>
 
       {/* On div wrapping Grid: a.) specify theme CSS Class Class and b.) set Grid size */}
-      <div className="ag-theme-alpine" style={{ width: 810, height: 500 }}>
+      <div className="ag-theme-alpine" style={{ width: 910, height: 500 }}>
         <AgGridReact
           ref={gridRef} // Ref for accessing Grid's API
 
